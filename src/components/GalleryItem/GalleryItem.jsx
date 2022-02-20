@@ -13,7 +13,7 @@ function GalleryItem({item, likePictures}) {
         likePictures(item.id)
     }
 
-    return(
+    return(//rendering 
         <>
             <div className="thing" key={item.id}>
                 {toggleImage ? 
