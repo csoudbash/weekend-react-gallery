@@ -1,6 +1,6 @@
 import GalleryItem from "../GalleryItem/GalleryItem";
 
-function GalleryList({galleryList}) {
+function GalleryList({galleryList, likePictures}) {
     
 
 return(
@@ -9,9 +9,12 @@ return(
             <header className="App-header">
             <h1 className="App-title">Gallery of My Life</h1>
             </header>
-            <GalleryItem 
-            galleryList = {galleryList}
+            {galleryList.map(item =>
+             <GalleryItem key={item.id}
+            item = {item}
+            likePictures = {likePictures}
             />
+            )}
         </div>
         
     </>

@@ -1,18 +1,17 @@
-function GalleryItem({galleryList}) {
+function GalleryItem({item, likePictures}) {
     
-    
+    function handleLikeButton() {
+        // console.log('sending the info back to app.jsx');
+        likePictures(item.id)
+    }
 
     return(
         <>
-        
-         {galleryList.map(item =>
             <div key={item.id}>
                 <img src= {item.path}/>
-                <button>Like</button>
-                <p>{item.likes}</p>
+                <button onClick={handleLikeButton}>Like</button>
+                <p>this many people like this:{item.likes}</p>
             </div>
-            )}
-          
         </>
         )
 }
