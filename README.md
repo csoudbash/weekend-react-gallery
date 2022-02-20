@@ -4,6 +4,7 @@
 
 _Duration: ~10 hours_
 
+This is a simple webpage that shows photos on the DOM and allows one to toggle between the picture and the description for the picture by simply clicking on the photo. it also has a "like" functionality that allows one to like the photo
 
 ### Prerequisites
 
